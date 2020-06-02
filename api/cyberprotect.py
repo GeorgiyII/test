@@ -6,7 +6,7 @@ cyberprotect_api = Blueprint('cyberprotect', __name__)
 
 
 @cyberprotect_api.route('/cyberprotect/1.1.1.1', methods=['GET'])
-def spy_data():
+def cyber_data():
     data = {
         "geo": {
             "country": {
@@ -52,5 +52,5 @@ def spy_data():
 
 
 @cyberprotect_api.route('/cyberprotect/2.2.2.2', methods=['GET'])
-def spy_data():
+def cyber_data_2():
     raise TooManyRequests
