@@ -127,5 +127,5 @@ def spy_catalog_17551():
 
 
 @spycloud_api.route('/spycloud/breach/data/emails/test@test.com ', methods=['GET'])
-def spy_data():
+def spy_data_2():
     raise TooManyRequests
