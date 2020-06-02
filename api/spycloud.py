@@ -126,6 +126,6 @@ def spy_catalog_17551():
     return jsonify(catalog)
 
 
-@spycloud_api.route('/spycloud/breach/data/emails/test@test.com ', methods=['GET'])
+@spycloud_api.route('/spycloud/breach/data/emails/test@test.com', methods=['GET'])
 def spy_data_2():
     raise TooManyRequests
