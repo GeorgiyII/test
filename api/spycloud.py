@@ -108,7 +108,7 @@ def spy_catalog_17551():
                 "site_description": "The AzorUlt Botnet is a lesser-known botnet that is mainly used for stealing credentials.",
                 "uuid": "8f8a4738-7068-4666-882b-793d485fd9da",
                 "num_records": 1530174,
-                "id": 17674,
+                "id": 17551,
                 "assets": {
                     "username": 644708,
                     "infected_path": 23558,
