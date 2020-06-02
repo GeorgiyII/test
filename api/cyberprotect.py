@@ -1,5 +1,5 @@
 from flask import Blueprint, jsonify
-from werkzeug.exceptions import InternalServerError
+from werkzeug.exceptions import NotFound
 
 
 cyberprotect_api = Blueprint('cyberprotect', __name__)
@@ -53,4 +53,4 @@ def cyber_data():
 
 @cyberprotect_api.route('/cyberprotect/2.2.2.2', methods=['GET'])
 def cyber_data_2():
-    raise InternalServerError
+    raise NotFound
