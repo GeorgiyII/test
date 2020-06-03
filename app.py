@@ -4,6 +4,7 @@ from flask import Flask, jsonify
 
 from api.spycloud import spycloud_api
 from api.cyberprotect import cyberprotect_api
+from api.abuse import abuse_api
 
 app = Flask(__name__)
 
@@ -12,6 +13,7 @@ app.config.from_object('config.Config')
 
 app.register_blueprint(spycloud_api)
 app.register_blueprint(cyberprotect_api)
+app.register_blueprint(abuse_api)
 
 
 @app.errorhandler(Exception)
