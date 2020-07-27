@@ -5,7 +5,7 @@ from werkzeug.exceptions import InternalServerError
 cybercrime_api = Blueprint('abuse', __name__)
 
 
-@cybercrime_api.route('/check', methods=['GET'])
+@cybercrime_api.route('/query.php', methods=['GET'])
 def cibercrime_data():
     if request.args['url'] == '1.1.1.1':
         data = {
